@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Goal</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1e1e1e;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    h1 {
+      color: gold;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .choices {
+      margin-top: 2rem;
+    }
+
+    .choices button {
+      background-color: #444;
+      border: 2px solid gold;
+      color: white;
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      margin: 1rem;
+      cursor: pointer;
+    }
+
+    .minecraft {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .character {
+      width: 120px;
+      text-align: center;
+      animation: floaty 3s ease-in-out infinite;
+    }
+
+    .character img {
+      width: 100%;
+    }
+
+    .character p {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: silver;
+    }
+
+    @keyframes floaty {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>What’s Your Goal?</h1>
+
+  <div class="choices">
+    <button onclick="alert('We’ll help you lose weight like a pro creeper! 💥')">Lose Weight</button>
+    <button onclick="alert('Bulking up like an iron golem! 🛡️')">Gain Weight</button>
+    <button onclick="alert('Time to build muscle like Steve breaking blocks! 💪')">Build Muscle</button>
+  </div>
+
+  <div class="minecraft">
+    <div class="character">
+      <img src="https://i.imgur.com/BbnvA6G.png" alt="Steve">
+      <p>Steve says: "No pain, no gain, bruh!"</p>
+    </div>
+    <div class="character">
+      <img src="https://i.imgur.com/cvprn0Y.png" alt="Creeper">
+      <p>Creeper says: "Let’s blast those calories!"</p>
+    </div>
+    <div class="character">
+      <img src="https://i.imgur.com/7UPIXpz.png" alt="Pig">
+      <p>Pig says: "Oink if you love protein!"</p>
+    </div>
+  </div>
+
+</body>
+</html>
