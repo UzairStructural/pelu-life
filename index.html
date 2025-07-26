@@ -135,6 +135,40 @@
 .top-nav a:hover {
   color: gold;
 }
+.grid-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.tab-box {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Makes it a perfect square */
+  border-radius: 8px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tab-box:hover {
+  transform: scale(1.03);
+}
+
+.tab-label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: gold;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
 
   </style>
 </head>
@@ -184,6 +218,27 @@
     <br><br>
     🍽️ <strong>Eat gold flakes on everything</strong> — including cereal, coffee, and motivational quotes.
   </p>
+       <div class="grid-tabs">
+  <div class="tab-box" style="background-image: url('https://i.imgur.com/nY2yM1O.jpg');">
+    <div class="tab-label">Fat Man</div>
+  </div>
+  <div class="tab-box" style="background-image: url('https://i.imgur.com/qMXlIXe.jpg');">
+    <div class="tab-label">Skinny Man</div>
+  </div>
+  <div class="tab-box" style="background-image: url('https://i.imgur.com/vKoM4FZ.jpg');">
+    <div class="tab-label">Rich Man</div>
+  </div>
+  <div class="tab-box" style="background-image: url('https://i.imgur.com/c7hRldV.jpg');">
+    <div class="tab-label">School Guy</div>
+  </div>
+  <div class="tab-box" style="background-image: url('https://i.imgur.com/UO8W6Sr.jpg');">
+    <div class="tab-label">Broke Man</div>
+  </div>
+  <div class="tab-box" style="background-image: url('https://i.imgur.com/ZYxBZFl.jpg');">
+    <div class="tab-label">Muscle Man</div>
+  </div>
+</div>
+
 </section>
 
 </div>
