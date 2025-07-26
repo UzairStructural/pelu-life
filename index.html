@@ -71,6 +71,40 @@
     footer a:hover {
       color: gold;
     }
+      .sparkle-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .sparkle-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: silver;
+    text-align: center;
+  }
+
+  .star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: gold;
+    border-radius: 50%;
+    animation: sparkle 2s infinite;
+    opacity: 0.8;
+  }
+
+  .star:nth-child(1) { top: -10px; left: 10%; animation-delay: 0s; }
+  .star:nth-child(2) { top: -15px; right: 20%; animation-delay: 0.3s; }
+  .star:nth-child(3) { bottom: -10px; left: 25%; animation-delay: 0.5s; }
+  .star:nth-child(4) { bottom: -12px; right: 15%; animation-delay: 0.7s; }
+  .star:nth-child(5) { top: 0; left: 50%; animation-delay: 1s; }
+
+  @keyframes sparkle {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.8); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.5; }
+  }
   </style>
 </head>
 <body>
