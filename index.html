@@ -105,6 +105,37 @@
     50% { transform: scale(1.8); opacity: 1; }
     100% { transform: scale(1); opacity: 0.5; }
   }
+    .top-nav {
+  background-color: white;
+  padding: 1rem 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.top-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.top-nav li {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.top-nav a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: gold;
+}
+
   </style>
 </head>
 <body>
@@ -112,6 +143,16 @@
     <h1>Pelu Life</h1>
     <p>The Luxury Way to Track Calories</p>
   </header>
+<nav class="top-nav">
+  <ul>
+    <li><a href="#">Our Solutions</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#">Our Firm</a></li>
+    <li><a href="#">Our Leadership</a></li>
+    <li><a href="#">Our Locations</a></li>
+    <li><a href="#">Our Careers</a></li>
+  </ul>
+</nav>
 
   <section class="content">
     <h2>About</h2>
